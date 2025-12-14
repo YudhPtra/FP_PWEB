@@ -26,6 +26,7 @@ $query_kategori = mysqli_query($conn, "SELECT * FROM categories");
     <title>Dashboard - Task Manager</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="FP_PWEB/assets/css/style.css" rel="stylesheet"> 
     
     <style>
         body { background-color: #f4f6f9; }
@@ -37,6 +38,12 @@ $query_kategori = mysqli_query($conn, "SELECT * FROM categories");
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button id="darkModeToggle" class="btn btn-outline-secondary">🌙</button>
+    </div>
+</nav>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
         <div class="container">
@@ -368,5 +375,6 @@ $query_kategori = mysqli_query($conn, "SELECT * FROM categories");
             }, 3000); 
         });
     </script>
+    <script src="FP_PWEB/assets/js/script.js"></script>
 </body>
 </html>
