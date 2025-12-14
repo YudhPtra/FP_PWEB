@@ -14,6 +14,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
     <title>Fitur Admin - Task Manager</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="FP_PWEB/assets/css/style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <style>
@@ -22,7 +23,12 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
     </style>
 </head>
 <body class="bg-light pb-5">
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button id="darkModeToggle" class="btn btn-outline-secondary">🌙</button>
+    </div>
+  </nav>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4 shadow">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
@@ -293,6 +299,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
             }, 5000);
         });
     </script>
-
+<script src="FP_PWEB/assets/js/script.js"></script>
 </body>
 </html>
